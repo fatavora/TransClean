@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleta e Reciclagem de Lixo Eletrônico</title>
+    <title>Coleta de Lixo Eletrônico em Jundiaí - Reciclagem Sustentável</title>
+    <meta name="description" content="Serviço de coleta de lixo eletrônico em Jundiaí. Recicle dispositivos eletrônicos de forma sustentável e segura.">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,9 +15,9 @@
             text-align: center;
         }
         header {
-            background: url('https://images.unsplash.com/photo-1560807707-8cc77767d783?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRyZWVzfGVufDB8fHx8MTY0MzkzNTQwNw&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+            background: url('https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
             color: white;
-            padding: 40px;
+            padding: 50px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
         }
         .container {
@@ -35,6 +36,7 @@
             cursor: pointer;
             display: block;
             width: 100%;
+            font-size: 16px;
         }
         button:hover {
             background: #219150;
@@ -55,32 +57,51 @@
             max-width: 600px;
             border-radius: 10px;
         }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Coleta de Lixo Eletrônico</h1>
+        <h1>Coleta de Lixo Eletrônico em Jundiaí</h1>
         <p>Descarte sustentável para um mundo melhor!</p>
     </header>
+
     <div class="image-section">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNpcmN1aXQlMjBib2FyZHxlbnwwfHx8fDE2NDM5MzU0MDc&ixlib=rb-1.2.1&q=80&w=1080" alt="Placas Eletrônicas">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Placas Eletrônicas">
     </div>
+
     <div class="container">
         <h2>Sobre Nós</h2>
-        <p>Somos uma empresa especializada na coleta e reciclagem de eletrônicos, garantindo um descarte correto e sustentável.</p>
+        <p>Somos uma empresa especializada na coleta e reciclagem de eletrônicos, garantindo um descarte correto e sustentável para a região de Jundiaí.</p>
+
         <h2>Agende sua Coleta</h2>
-        <form>
+        <form action="https://formspree.io/f/SEU_EMAIL_AQUI" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
+
             <label for="endereco">Endereço para Coleta:</label>
             <input type="text" id="endereco" name="endereco" required><br><br>
+
             <button type="submit">Enviar Pedido</button>
         </form>
     </div>
+
+    <h2>Localização</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.004253571099!2d-46.89519138550005!3d-23.185624084860986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2c1677b0c1a5%3A0x9c6c7d3fd3f64a0b!2sJundia%C3%AD%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1643945245294!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy">
+    </iframe>
+
     <footer>
-        <p>&copy; 2025 Reciclagem Eletrônica - Todos os direitos reservados</p>
+        <p>&copy; 2025 Reciclagem Eletrônica - Jundiaí</p>
     </footer>
 </body>
 </html>
