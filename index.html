@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleta de Lixo Eletrônico em Jundiaí</title>
-    <meta name="description" content="Serviço de coleta de lixo eletrônico em Jundiaí. Recicle dispositivos eletrônicos de forma sustentável e segura.">
+    <title>Coleta de Lixo Eletrônico | Jundiaí</title>
+    <meta name="description" content="Descarte seu lixo eletrônico de forma segura e sustentável em Jundiaí. Agende a coleta gratuita!">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,45 +16,132 @@
         }
         header {
             padding: 30px;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            background: #1b5e20;
+        }
+        .hero {
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background: #66bb6a;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #4caf50;
         }
         .container {
-            max-width: 600px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background: #1b5e20;
             border-radius: 8px;
         }
-        iframe {
+        .benefits, .testimonials {
+            margin: 40px 20px;
+        }
+        .benefits h2, .testimonials h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        .benefits p, .testimonials p {
+            font-size: 18px;
+        }
+        form {
+            margin-top: 20px;
+            text-align: left;
+        }
+        label, input {
+            display: block;
             width: 100%;
-            height: 500px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input {
+            padding: 8px;
             border: none;
             border-radius: 5px;
         }
+        button {
+            background: #66bb6a;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #4caf50;
+        }
         footer {
             margin-top: 20px;
-            padding: 10px;
+            padding: 20px;
             font-size: 14px;
             background: #1b5e20;
         }
     </style>
 </head>
 <body>
+
     <header>
-        Coleta de Lixo Eletrônico em Jundiaí
+        Reciclagem Eletrônica Jundiaí
     </header>
 
-    <div class="container">
-        <h2>Descarte Sustentável</h2>
-        <p>Somos uma empresa especializada na coleta e reciclagem de eletrônicos em Jundiaí.</p>
+    <section class="hero">
+        <h1>Descarte Sustentável de Eletrônicos</h1>
+        <p>Recicle seu lixo eletrônico de forma segura e ajude o meio ambiente!</p>
+        <a href="#formulario" class="btn">Agendar Coleta</a>
+    </section>
 
+    <section class="benefits">
+        <h2>Por que reciclar conosco?</h2>
+        <p>♻️ Destinação correta para lixo eletrônico.</p>
+        <p>📍 Atendimento em toda Jundiaí.</p>
+        <p>✅ Processo rápido e sem custo.</p>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que nossos clientes dizem?</h2>
+        <p>"Serviço excelente! Fácil, rápido e sustentável." - Ana S.</p>
+        <p>"Ótima opção para quem quer descartar eletrônicos sem poluir!" - João M.</p>
+    </section>
+
+    <div class="container" id="formulario">
         <h2>Agende sua Coleta</h2>
-        <iframe src="SUA_URL_DO_FORM"></iframe>
+        <form action="https://formspree.io/f/SEU_EMAIL_AQUI" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
     </div>
 
     <footer>
-        &copy; 2025 Reciclagem Eletrônica - Jundiaí
+        &copy; 2025 Reciclagem Eletrônica - Jundiaí | contato@reciclagemjundiai.com
     </footer>
+
 </body>
 </html>
