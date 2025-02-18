@@ -2,36 +2,33 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Coleta de Lixo Eletrônico | Jundiaí</title>
     <meta name="description" content="Descarte seu lixo eletrônico de forma segura e sustentável em Jundiaí. Agende a coleta gratuita!">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #2e7d32;
             color: white;
-            text-align: center;
-        }
-        header {
-            padding: 30px;
-            font-size: 28px;
-            font-weight: bold;
-            background: #1b5e20;
         }
         .hero {
-            padding: 50px 20px;
+            text-align: center;
+            padding: 80px 20px;
+            background: #1b5e20;
         }
         .hero h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 40px;
+            font-weight: bold;
         }
         .hero p {
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin-bottom: 25px;
         }
-        .btn {
+        .btn-custom {
             background: #66bb6a;
             color: white;
             padding: 15px 25px;
@@ -40,108 +37,201 @@
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
         }
-        .btn:hover {
+        .btn-custom:hover {
             background: #4caf50;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+        .container-custom {
             background: #1b5e20;
+            padding: 30px;
             border-radius: 8px;
-        }
-        .benefits, .testimonials {
-            margin: 40px 20px;
-        }
-        .benefits h2, .testimonials h2 {
-            font-size: 26px;
-            margin-bottom: 15px;
-        }
-        .benefits p, .testimonials p {
-            font-size: 18px;
-        }
-        form {
             margin-top: 20px;
-            text-align: left;
         }
-        label, input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-            font-size: 16px;
-        }
-        input {
-            padding: 8px;
-            border: none;
+        .form-control {
             border-radius: 5px;
-        }
-        button {
-            background: #66bb6a;
-            color: white;
             padding: 10px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            font-size: 18px;
-            border-radius: 5px;
         }
-        button:hover {
-            background: #4caf50;
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .benefit-card {
+            background: #1b5e20;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .benefit-card:hover {
+            background: #388e3c;
         }
         footer {
-            margin-top: 20px;
+            text-align: center;
             padding: 20px;
-            font-size: 14px;
             background: #1b5e20;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        Reciclagem Eletrônica Jundiaí
-    </header>
-
-    <section class="hero">
+    <!-- Seção Hero -->
+    <header class="hero">
         <h1>Descarte Sustentável de Eletrônicos</h1>
         <p>Recicle seu lixo eletrônico de forma segura e ajude o meio ambiente!</p>
-        <a href="#formulario" class="btn">Agendar Coleta</a>
-    </section>
+        <a href="#formulario" class="btn btn-custom">Agendar Coleta</a>
+    </header>
 
-    <section class="benefits">
-        <h2>Por que reciclar conosco?</h2>
-        <p>♻️ Destinação correta para lixo eletrônico.</p>
-        <p>📍 Atendimento em toda Jundiaí.</p>
-        <p>✅ Processo rápido e sem custo.</p>
-    </section>
+    <!-- Seção Benefícios -->
+    <div class="container my-5">
+        <h2 class="section-title">Por que reciclar conosco?</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <h4>♻️ Sustentabilidade</h4>
+                    <p>Seu lixo eletrônico será reciclado de forma responsável.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <h4>📍 Atendimento Local</h4>
+                    <p>Servimos toda a região de Jundiaí.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="benefit-card">
+                    <h4>✅ Coleta Rápida</h4>
+                    <p>Agende seu descarte em poucos minutos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="testimonials">
-        <h2>O que nossos clientes dizem?</h2>
-        <p>"Serviço excelente! Fácil, rápido e sustentável." - Ana S.</p>
-        <p>"Ótima opção para quem quer descartar eletrônicos sem poluir!" - João M.</p>
-    </section>
+    <!-- Seção Depoimentos -->
+    <div class="container my-5">
+        <h2 class="section-title">O que nossos clientes dizem?</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"Serviço excelente! Fácil, rápido e sustentável."</p>
+                    <footer class="blockquote-footer text-light">Ana S.</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"Ótima opção para quem quer descartar eletrônicos sem poluir!"</p>
+                    <footer class="blockquote-footer text-light">João M.</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
 
-    <div class="container" id="formulario">
-        <h2>Agende sua Coleta</h2>
-        <form action="https://formspree.io/f/SEU_EMAIL_AQUI" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
-
-            <button type="submit">Enviar Pedido</button>
+    <!-- Seção Formulário -->
+    <div class="container container-custom" id="formulario">
+        <h2 class="text-center">Agende sua Coleta</h2>
+        <form action="https://formspree.io/f/SEU_EMAIL_AQUI" method="POST" class="mt-3">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Enviar Pedido</button>
         </form>
     </div>
 
+<!-- Seção Materiais Eletrônicos Descartáveis -->
+<div class="container my-5">
+    <h2 class="section-title">O que podemos reciclar?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-laptop"></i>
+                <h4>Computadores e Acessórios</h4>
+                <p>Monitores, teclados, mouses, CPUs, notebooks.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-phone"></i>
+                <h4>Celulares e Tablets</h4>
+                <p>Smartphones, carregadores, cabos USB.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-house"></i>
+                <h4>Eletrodomésticos</h4>
+                <p>Micro-ondas, ventiladores, liquidificadores, secadores de cabelo.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-battery-half"></i>
+                <h4>Pilhas e Baterias</h4>
+                <p>Baterias de lítio, pilhas AA, AAA, recarregáveis.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-tv"></i>
+                <h4>Televisores e Rádios</h4>
+                <p>TVs de tubo, LCD, plasma, rádios antigos.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="recycle-item">
+                <i class="bi bi-printer"></i>
+                <h4>Impressoras e Cartuchos</h4>
+                <p>Impressoras a jato de tinta, laser e cartuchos usados.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Estilos da Seção de Materiais Eletrônicos -->
+<style>
+    .recycle-item {
+        background: #1b5e20;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .recycle-item:hover {
+        background: #388e3c;
+    }
+    .recycle-item i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #a5d6a7;
+    }
+</style>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Rodapé -->
     <footer>
-        &copy; 2025 Reciclagem Eletrônica - Jundiaí | contato@reciclagemjundiai.com
+        <p>&copy; 2025 Reciclagem Eletrônica - Jundiaí</p>
+        <p>Email: contato@reciclagemjundiai.com | Telefone: (11) 99999-9999</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
